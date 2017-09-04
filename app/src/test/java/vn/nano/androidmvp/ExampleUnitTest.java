@@ -1,4 +1,4 @@
-package vn.nano.androidmvparchitectureexample;
+package vn.nano.androidmvp;
 
 import org.junit.Test;
 

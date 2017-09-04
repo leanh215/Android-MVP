@@ -1,4 +1,4 @@
-package vn.nano.androidmvparchitectureexample;
+package vn.nano.androidmvp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

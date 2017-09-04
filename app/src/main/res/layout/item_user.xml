@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    
+    <data>
+        <variable
+            name="user"
+            type="vn.nano.androidmvp.data.model.User"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        >
+        
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="56dp"
+            android:layout_height="56dp" 
+            app:roundAsCircle="true"
+            app:placeholderImage="@drawable/ic_avatar_holder"
+            app:placeholderImageScaleType="centerCrop"
+            app:actualImageScaleType="centerCrop"
+            android:id="@+id/img_avatar"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Username"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:id="@+id/tv_username"
+                android:text="@{user.login}"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Score: 22.456"
+                android:id="@+id/tv_scores"
+                android:text="@{user.score}"
+                />
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+</layout>
